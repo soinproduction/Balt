@@ -1,0 +1,25 @@
+.main-top {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+
+  h2 {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2em;
+    line-height: 100%;
+    color: $color-main--title;
+    margin-bottom: 0.65em;
+  }
+
+  p {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 110%;
+    color: $color-text--white;
+  }
+}

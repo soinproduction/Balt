@@ -1,0 +1,23 @@
+.catalog-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6em 3em;
+
+  &__image {
+    margin-bottom: 2em;
+  }
+
+  &__item {
+    & > h3 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4em;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: $color-catalg--title;
+    }
+  }
+}

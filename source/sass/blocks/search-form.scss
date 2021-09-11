@@ -1,0 +1,35 @@
+.search-form {
+  position: relative;
+  background: transparent;
+  width: 100%;
+
+
+  input {
+    width: 100%;
+    padding: 2em 0;
+    border-bottom: 2px solid $white-border;
+    background: transparent;
+
+    &::placeholder {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6em;
+      line-height: 220%;
+      color: $color-text--white;
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    svg {
+      width: 2.7em;
+      height: 2.8em;
+    }
+  }
+}

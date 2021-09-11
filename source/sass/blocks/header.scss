@@ -1,0 +1,42 @@
+header {
+  background: $bg--header;
+}
+
+.header {
+  padding: 2.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-inner {
+  max-width: 70em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2.3em;
+  align-items: center;
+
+  &__top > h1 {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: $color-nav--top;
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 4.6em;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__form {
+    max-width: 32em;
+    width: 100%;
+  }
+}
