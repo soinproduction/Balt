@@ -14,18 +14,13 @@
 @keyframes waves {
   0% {
     margin-left: 0;
-    height: 15em;
-    top: -15em;
    }
 
    50% {
-    top: -10em;
     margin-left: -300vw;
    }
 
   100% {
     margin-left: 0;
-    height: 15em;
-    top: -15em;
   }
 }

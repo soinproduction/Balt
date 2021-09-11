@@ -53,5 +53,27 @@
   font-size: 1.6em;
   line-height: 24px;
   text-transform: uppercase;
+}
 
+.first-slider {
+  position: relative;
+}
+
+.first-slider__button {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    fill: transparent;
+  }
+
+  &--next {
+    right: 5em;
+  }
+
+  &--prev {
+    left: 5em;
+  }
 }
