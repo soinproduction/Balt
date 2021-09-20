@@ -1,6 +1,12 @@
 .about-sec {
   padding: 10em 0;
   background-color: $bg--about;
+  position: relative;
+
+  &--page {
+    padding: 0 0 10em 0;
+    margin-top: 12em;
+  }
 }
 
 
@@ -19,6 +25,7 @@
       font-weight: 600;
       font-size: 3.2em;
       line-height: 130%;
+      width: fit-content;
       color: $color-text--white;
       margin-bottom: 1.9em;
       position: relative;
@@ -27,7 +34,7 @@
         content: '';
         position: absolute;
         max-width: 136px;
-        width: 100%;
+        width: 80%;
         height: 5px;
         background-color: #fff;
         left: 0;

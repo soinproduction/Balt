@@ -1,0 +1,50 @@
+.more-list {
+  display: flex;
+  grid-gap: 4em;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  &__item {
+    max-width: 20.2em;
+    width: 100%;
+    border-radius: 16px;
+    background: #D0DFEF;
+    padding-bottom: 1.4em;
+
+    h3 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6em;
+      line-height: 87%;
+      text-align: center;
+      color: $color-catalg--title;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__image {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 2.9em;
+  }
+
+  &__link {
+    background: #F0AD3E;
+    border-radius: 10px;
+    color: $color-text--white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0 12px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 120%;
+    text-align: center;
+    display: block;
+  }
+
+}
+
+
+

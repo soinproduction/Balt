@@ -1,12 +1,15 @@
 .wave-box {
   position: absolute;
   top: -15em;
-  z-index: 0;
+  z-index: 1;
+
   width: 9999vw;
   height: 15em;
+
   background-image: url(../img/wave.svg);
-  background-size: contain;
   background-repeat: repeat-x;
+  background-size: contain;
+
   animation: waves 30s infinite ease-in-out;
 }
 
@@ -14,11 +17,11 @@
 @keyframes waves {
   0% {
     margin-left: 0;
-   }
+  }
 
-   50% {
+  50% {
     margin-left: -300vw;
-   }
+  }
 
   100% {
     margin-left: 0;

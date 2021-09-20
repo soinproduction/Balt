@@ -6,7 +6,7 @@ body {
   line-height: normal;
   font-family: "Poppins";
   color: #000000;
-  background-color: #fff;
+  background-color: #D0DFEF;
   overflow-x: hidden;
 }
 
@@ -132,6 +132,11 @@ input[type="number"] {
   }
 }
 
+section {
+  position: relative;
+  background-color: #fff;
+}
+
 .container {
   width: 100%;
   max-width: 117em;
@@ -140,6 +145,11 @@ input[type="number"] {
 
   &--header {
     max-width: 144em;
+  }
+
+  &--slider {
+    padding: 0;
+    max-width: 100%;
   }
 }
 

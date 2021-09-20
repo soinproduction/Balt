@@ -1,0 +1,29 @@
+.product-sec {
+  margin-top: 15em;
+  position: relative;
+  padding-bottom: 15em;
+
+  &::before {
+    position: absolute;
+    height: 65em;
+    width: 100%;
+    content: '';
+    background: #006DDA;
+    top: 0;
+  }
+}
+
+.product-box {
+  position: relative;
+  z-index: 5;
+
+  &__image {
+    max-width: 67em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__top {
+    margin-bottom: 100px;
+  }
+}

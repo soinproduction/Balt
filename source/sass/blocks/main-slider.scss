@@ -3,35 +3,38 @@
 
   &__box {
     position: absolute;
-    z-index: 2;
-    left: 50%;
     top: 17em;
+    left: 50%;
+    z-index: 2;
+
     transform: translateX(-50%);
 
     & > h2 {
-      max-width: 22em;
       width: 100%;
-      font-family: $font-family;
+      max-width: 22em;
+
       font-style: normal;
       font-weight: 600;
       font-size: 3.6em;
       line-height: 42px;
+      font-family: $font-family;
       text-align: center;
       color: $color-text--white;
     }
 
     & > p {
-      font-family: $font-family;
+      width: 100%;
+      max-width: 41em;
+      margin-bottom: 1.8em;
+
       font-style: normal;
       font-weight: 600;
       font-size: 1.8em;
       line-height: 22px;
+      font-family: $font-family;
       text-align: center;
       color: $color-text--white;
-      text-shadow: 10px 10px 50px #1261B0;
-      margin-bottom: 1.8em;
-      max-width: 41em;
-      width: 100%;
+      text-shadow: 10px 10px 50px #1261b0;
     }
   }
 }
@@ -40,19 +43,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  background: $bg--button;
-  color: $color-nav--top;
-  border-radius: 1em;
-  max-width: 11.125em;
   width: 100%;
+  max-width: 11.125em;
   height: 5em;
-  font-family: $font-family;
+  margin: 0 auto;
+
   font-style: normal;
   font-weight: 600;
   font-size: 1.6em;
   line-height: 24px;
+  font-family: $font-family;
+  color: $color-nav--top;
   text-transform: uppercase;
+
+  background: $bg--button;
+  border-radius: 1em;
 }
 
 .first-slider {
@@ -61,8 +66,9 @@
 
 .first-slider__button {
   position: absolute;
-  z-index: 30;
   top: 50%;
+  z-index: 30;
+
   transform: translateY(-50%);
 
   svg {
@@ -71,6 +77,7 @@
 
   &--next {
     right: 5em;
+    transform: scaleX(-1) translateY(-50%);
   }
 
   &--prev {

@@ -1,0 +1,27 @@
+.partners-sec {
+  position: relative;
+  margin-top: 15em;
+  padding-bottom: 15em;
+
+  &::before {
+    position: absolute;
+    height: 12em;
+    width: 100%;
+    content: '';
+    background: #006DDA;
+    top: 0;
+  }
+}
+
+.partners-box {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 20%);
+  grid-gap: 50px 20px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

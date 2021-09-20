@@ -1,0 +1,156 @@
+.articles-sec {
+  margin-top: 12em;
+  position: relative;
+  padding-bottom: 15em;
+  z-index: 0;
+
+  &::before {
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 30em;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: $bg--about;
+  }
+}
+
+.articles-box {
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% / 2 - 1.5em));
+  justify-content: space-between;
+  grid-gap: 3em;
+
+  &__item {
+    width: 100%;
+    background:  #D0DFEF;
+    border-radius: 28px;
+  }
+
+  &__bottom {
+    padding: 5.5em 10em 10em;
+
+    span {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4em;
+      line-height: 21px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: $color-main--title;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.2em;
+      line-height: 130%;
+      color: $color-catalg--title;
+      margin-bottom: 47px;
+    }
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4em;
+      line-height: 157%;
+      color: $color-icon--text;
+      min-height: 142px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      width: 100%;
+      text-align: center;
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4em;
+      /* identical to box height */
+      letter-spacing: 0.35em;
+      padding: 30px 0;
+      color: $color-text--white;
+      background: #F0AD3E;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+.article-box {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__body {
+    max-width: 77em;
+    width: 100%;
+  }
+
+  &__inner {
+    max-width: 37em;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    &:first-child {
+      margin-bottom: 140px;
+    }
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4em;
+      line-height: 120%;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: $color-main--title;
+      margin-bottom: 1
+      em;
+    }
+
+    h3 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.2em;
+      line-height: 131%;
+      color: $color-text--white;
+    }
+  }
+
+  &__text {
+    margin-bottom: 6em;
+
+    p {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4em;
+      line-height: 214%;
+      color: $color-icon--text;
+
+      &:not(:first-child) {
+        margin-top: 2.2em;
+      }
+    }
+  }
+
+  &__image {
+    margin-bottom: 6em;
+  }
+}
+

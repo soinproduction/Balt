@@ -425,8 +425,8 @@ let firstSlider = new Swiper('.first-slider', {
     spaceBetween: 0,
     loop: true,
     navigation: {
-      nextEl: ".myTabsSlider__next",
-      prevEl: ".myTabsSlider__prev",
+      nextEl: ".first-slider__button--next",
+      prevEl: ".first-slider__button--prev",
     },
 
     // breakpoints: {
@@ -450,6 +450,39 @@ let firstSlider = new Swiper('.first-slider', {
     // }
 
   });
+
+  let bigSlider = new Swiper('.big-slider', {
+    slidesPerView: 2.5,
+    spaceBetween: 70,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: '.big-pagination',
+      type: 'bullets',
+    },
+
+    // breakpoints: {
+    //   320: {
+    //     slidesPerView: 1.8,
+    //     spaceBetween: 30,
+    //   },
+    //   577: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20,
+    //   },
+    //   768: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 20,
+    //     navigation:false,
+    //   },
+    //   992: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 20
+    //   },
+    // }
+
+  });
+
 
 
 

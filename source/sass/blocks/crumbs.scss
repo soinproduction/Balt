@@ -1,0 +1,33 @@
+.crumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1.5em;
+
+  &__item {
+    &:not(:first-child) {
+      position: relative;
+
+      &::before {
+        content: '>';
+        position: absolute;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: $color-text--white;
+        left: -0.7em;
+      }
+    }
+
+    a {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4em;
+      line-height: 157%;
+      color: $color-text--white;
+
+    }
+  }
+}

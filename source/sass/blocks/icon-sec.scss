@@ -1,0 +1,51 @@
+.icon-sec {
+  padding: 10em 0 15em;
+}
+
+.icons-box {
+  display: grid;
+  justify-content: space-around;
+
+  grid-gap: 45px 0;
+  grid-template-columns: repeat(3, 30%);
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    & > h3 {
+      margin-bottom: 0.6em;
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.2em;
+      line-height: 100%;
+      font-family: $font-family;
+      color: $color-text;
+    }
+
+    p {
+      width: 100%;
+      max-width: 20em;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.4em;
+      line-height: 157%;
+      font-family: $font-family;
+      color: $color-icon--text;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10em;
+    margin-bottom: 3.5em;
+  }
+}

@@ -21,3 +21,11 @@
     }
   }
 }
+
+.subcatalog-box {
+  .more-list {
+    flex-wrap: wrap;
+    grid-gap: 4em 3em;
+    justify-content: space-between;
+  }
+}
