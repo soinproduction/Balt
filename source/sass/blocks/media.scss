@@ -1,7 +1,39 @@
-@media (min-width: 1200px) and (max-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 19200px) {
   body, html {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  .swiper-slide__box {
+    top: 8em;
+  }
+
+  .catalog-box__image {
+    width: 100%;
+  }
+
+  .about-box {
+    grid-gap: 0;
+  }
+
+  .articles-sec::before {
+    height: 22em;
+  }
+
+  .contact-box__row {
+    grid-gap: 200px;
+  }
+
+  .contact-sec::before {
+    height: 66em;
   }
 
 }
